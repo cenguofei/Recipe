@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/bottom_select_color.xml" value="0.1" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/circle_shape.xml" value="0.2101851851851852" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/detail_round_corner_shape.xml" value="0.275" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/favorite_mark_selector.xml" value="0.2640625" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/ic_launcher_background.xml" value="0.275" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/indicater_bg_round_shape.xml" value="0.275" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/ingredient_round_shape.xml" value="0.1" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/round_corner_shape.xml" value="0.275" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/round_shape.xml" value="0.275" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/drawable/top_round_shape.xml" value="0.2671794871794872" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/font/food_font.xml" value="0.26851851851851855" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/favorite_item.xml" value="0.264" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/food_item.xml" value="0.24768518518518517" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/food_item_shimmer_layout.xml" value="0.25885416666666666" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/fragment_detail.xml" value="0.264" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/fragment_favorite.xml" value="0.264" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/fragment_ingredient.xml" value="0.2" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/fragment_other.xml" value="0.1" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/fragment_recipe.xml" value="0.264" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/fragment_summary.xml" value="0.264" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/ingredient_item.xml" value="0.1" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/layout/item_type.xml" value="0.264" />
+        <entry key="..\:/SummerDemo/Food/app/src/main/res/menu/bottom_menu.xml" value="0.536" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

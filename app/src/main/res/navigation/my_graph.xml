@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_graph"
+    app:startDestination="@id/recipeFragment">
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.food.fragment.favorite.FavoriteFragment"
+        android:label="Favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/otherFragment"
+        android:name="com.example.food.fragment.other.OtherFragment"
+        android:label="Other"
+        tools:layout="@layout/fragment_other" />
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.example.food.fragment.recipe.RecipeFragment"
+        android:label="Recipe"
+        tools:layout="@layout/fragment_recipe" >
+        <action
+            android:id="@+id/action_recipeFragment_to_detailFragment"
+            app:destination="@id/detailFragment"
+            app:enterAnim="@anim/enter_anim"
+            app:exitAnim="@anim/exit_anim"
+            app:popEnterAnim="@anim/pop_enter_anim"
+            app:popExitAnim="@anim/pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.food.fragment.recipe.detail.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="recipe"
+            app:argType="com.example.food.data.model.Result" />
+    </fragment>
+</navigation>

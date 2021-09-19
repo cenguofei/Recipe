@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="recipe"
+            type="com.example.food.data.model.Result" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view11"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/round_corner_shape"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:text="@{recipe.title}"
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="2"
+            android:textColor="#F6F5F5"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/view11"
+            app:layout_constraintTop_toTopOf="@+id/view11"
+            tools:text="Homemade Garlic nand Basil French Fries" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:scaleType="centerCrop"
+            loadImageWithUrl="@{recipe.image}"
+            android:id="@+id/imageView4"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="13dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view11"
+            app:layout_constraintEnd_toEndOf="@+id/view11"
+            app:layout_constraintTop_toTopOf="@+id/view11"
+            app:shapeAppearanceOverlay="@style/circleFavoriteImageStyle"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <TextView
+
+            android:id="@+id/minute"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@{String.valueOf(recipe.readyInMinutes)}"
+            android:textColor="#DCD79E"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view11"
+            app:layout_constraintStart_toStartOf="@+id/title"
+            tools:text="124" />
+
+        <TextView
+            android:id="@+id/minute2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="@{String.valueOf(recipe.aggregateLikes)}"
+            android:textColor="#DCD79E"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/minute"
+            app:layout_constraintStart_toEndOf="@+id/minute"
+            app:layout_constraintTop_toTopOf="@+id/minute"
+            tools:text="124" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Min"
+            android:textColor="#DCD79E"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/minute"
+            app:layout_constraintEnd_toEndOf="@+id/minute"
+            app:layout_constraintStart_toStartOf="@+id/minute" />
+
+        <TextView
+            android:id="@+id/likes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="Likes"
+            android:textColor="#DCD79E"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/minute2"
+            app:layout_constraintEnd_toEndOf="@+id/minute2"
+            app:layout_constraintStart_toStartOf="@+id/minute2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
