@@ -43,15 +43,15 @@ class RecipeFragment : Fragment() {
             }*/
             when(it){
                 is NetworkResult.Success -> {
-                    binding.foodRecyclerView.hideShimmer()
+//                    binding.foodRecyclerView.hideShimmer()
                     foodAdapter.setData(it.data!!.results)
                 }
                 is NetworkResult.Loading ->{
-                    binding.foodRecyclerView.showShimmer()
+//                    binding.foodRecyclerView.showShimmer()
                 }
                 is NetworkResult.Error ->{
                     Log.v("jjj","次数上限")
-                    binding.foodRecyclerView.hideShimmer()
+//                    binding.foodRecyclerView.hideShimmer()
                     showToast(requireContext(),it.message!!)
                 }
             }
