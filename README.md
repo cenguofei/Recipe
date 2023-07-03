@@ -1,6 +1,5 @@
 # Recipe
 这是一款食谱app，用户可选择自己喜爱的菜式进行学习，包括材料、用量、具体做法等，用户还可对喜爱的食谱进行收藏。
-This is a Food Recipe Application
 
 # Screenshot
 ![Snipaste_2023-06-28_23-56-21](https://github.com/cenguofei/Recipe/assets/72325667/d5b55d61-2181-40c8-ba30-69ffd394b0aa)
